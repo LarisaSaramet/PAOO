@@ -1,4 +1,9 @@
-/home/xjuji10x/Desktop/Tema1/build/CMakeFiles/lib.dir
-/home/xjuji10x/Desktop/Tema1/build/CMakeFiles/Meniu.dir
-/home/xjuji10x/Desktop/Tema1/build/CMakeFiles/edit_cache.dir
-/home/xjuji10x/Desktop/Tema1/build/CMakeFiles/rebuild_cache.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles/edit_cache.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles/rebuild_cache.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/CMakeFiles/main-main.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/CMakeFiles/lib.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/CMakeFiles/main.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/CMakeFiles/edit_cache.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/CMakeFiles/rebuild_cache.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/meniu/CMakeFiles/edit_cache.dir
+/home/xjuji10x/Desktop/PAOO/Tema1/build/src/meniu/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/Meniu.dir/src/main.cpp.o -o Meniu  liblib.a 

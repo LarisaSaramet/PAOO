@@ -54,79 +54,139 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xjuji10x/Desktop/Tema1
+CMAKE_SOURCE_DIR = /home/xjuji10x/Desktop/PAOO/Tema1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xjuji10x/Desktop/Tema1/build
+CMAKE_BINARY_DIR = /home/xjuji10x/Desktop/PAOO/Tema1/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lib.dir/all
-all: CMakeFiles/Meniu.dir/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lib.dir/clean
-clean: CMakeFiles/Meniu.dir/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lib.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/main-main.dir/all
+src/all: src/CMakeFiles/lib.dir/all
+src/all: src/CMakeFiles/main.dir/all
+src/all: src/meniu/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall: src/meniu/preinstall
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/main-main.dir/clean
+src/clean: src/CMakeFiles/lib.dir/clean
+src/clean: src/CMakeFiles/main.dir/clean
+src/clean: src/meniu/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/meniu
+
+# Recursive "all" directory target.
+src/meniu/all:
+.PHONY : src/meniu/all
+
+# Recursive "preinstall" directory target.
+src/meniu/preinstall:
+.PHONY : src/meniu/preinstall
+
+# Recursive "clean" directory target.
+src/meniu/clean:
+.PHONY : src/meniu/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/main-main.dir
 
 # All Build rule for target.
-CMakeFiles/lib.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/Tema1/build/CMakeFiles --progress-num=3,4 "Built target lib"
-.PHONY : CMakeFiles/lib.dir/all
+src/CMakeFiles/main-main.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main-main.dir/build.make src/CMakeFiles/main-main.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main-main.dir/build.make src/CMakeFiles/main-main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles --progress-num=5 "Built target main-main"
+.PHONY : src/CMakeFiles/main-main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/Tema1/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/Tema1/build/CMakeFiles 0
-.PHONY : CMakeFiles/lib.dir/rule
+src/CMakeFiles/main-main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main-main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/main-main.dir/rule
 
 # Convenience name for target.
-lib: CMakeFiles/lib.dir/rule
+main-main: src/CMakeFiles/main-main.dir/rule
+.PHONY : main-main
+
+# clean rule for target.
+src/CMakeFiles/main-main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main-main.dir/build.make src/CMakeFiles/main-main.dir/clean
+.PHONY : src/CMakeFiles/main-main.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/lib.dir
+
+# All Build rule for target.
+src/CMakeFiles/lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib.dir/build.make src/CMakeFiles/lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib.dir/build.make src/CMakeFiles/lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles --progress-num=1,2 "Built target lib"
+.PHONY : src/CMakeFiles/lib.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/lib.dir/rule
+
+# Convenience name for target.
+lib: src/CMakeFiles/lib.dir/rule
 .PHONY : lib
 
 # clean rule for target.
-CMakeFiles/lib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/clean
-.PHONY : CMakeFiles/lib.dir/clean
+src/CMakeFiles/lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/lib.dir/build.make src/CMakeFiles/lib.dir/clean
+.PHONY : src/CMakeFiles/lib.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Meniu.dir
+# Target rules for target src/CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/Meniu.dir/all: CMakeFiles/lib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meniu.dir/build.make CMakeFiles/Meniu.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meniu.dir/build.make CMakeFiles/Meniu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/Tema1/build/CMakeFiles --progress-num=1,2 "Built target Meniu"
-.PHONY : CMakeFiles/Meniu.dir/all
+src/CMakeFiles/main.dir/all: src/CMakeFiles/lib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles --progress-num=3,4 "Built target main"
+.PHONY : src/CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Meniu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/Tema1/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Meniu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/Tema1/build/CMakeFiles 0
-.PHONY : CMakeFiles/Meniu.dir/rule
+src/CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/Tema1/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-Meniu: CMakeFiles/Meniu.dir/rule
-.PHONY : Meniu
+main: src/CMakeFiles/main.dir/rule
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/Meniu.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meniu.dir/build.make CMakeFiles/Meniu.dir/clean
-.PHONY : CMakeFiles/Meniu.dir/clean
+src/CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/clean
+.PHONY : src/CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
