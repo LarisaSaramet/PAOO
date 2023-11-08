@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.o -o main  mancare/libMancareLib.a meniu/libMeniuLib.a mancare/libMancareLib.a 

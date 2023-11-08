@@ -1,0 +1,9 @@
+/home/xjuji10x/Desktop/TEMA/build/CMakeFiles/main.dir
+/home/xjuji10x/Desktop/TEMA/build/CMakeFiles/edit_cache.dir
+/home/xjuji10x/Desktop/TEMA/build/CMakeFiles/rebuild_cache.dir
+/home/xjuji10x/Desktop/TEMA/build/meniu/CMakeFiles/MeniuLib.dir
+/home/xjuji10x/Desktop/TEMA/build/meniu/CMakeFiles/edit_cache.dir
+/home/xjuji10x/Desktop/TEMA/build/meniu/CMakeFiles/rebuild_cache.dir
+/home/xjuji10x/Desktop/TEMA/build/mancare/CMakeFiles/MancareLib.dir
+/home/xjuji10x/Desktop/TEMA/build/mancare/CMakeFiles/edit_cache.dir
+/home/xjuji10x/Desktop/TEMA/build/mancare/CMakeFiles/rebuild_cache.dir
