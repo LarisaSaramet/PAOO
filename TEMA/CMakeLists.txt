@@ -1,8 +1,6 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.2)
 
-
-
-project(main)
+project(restaurant)
 
 if(CMAKE_VERSION GREATER "3.1.2") 
     set(CMAKE_CXX_STANDARD 14)
@@ -15,4 +13,5 @@ else()
 endif()
 
 add_subdirectory(src)
-
+add_subdirectory(main)
+add_subdirectory(includes)

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libMancareLib.a CMakeFiles/MancareLib.dir/mancare.o
-/usr/bin/ranlib libMancareLib.a

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libMeniuLib.a CMakeFiles/MeniuLib.dir/meniu.o
-/usr/bin/ranlib libMeniuLib.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librestaurant_src.a CMakeFiles/restaurant_src.dir/meniu/meniu.cpp.o CMakeFiles/restaurant_src.dir/bautura/bautura.cpp.o CMakeFiles/restaurant_src.dir/adresa/adresa.cpp.o CMakeFiles/restaurant_src.dir/livrare/livrare.cpp.o
+/usr/bin/ranlib librestaurant_src.a

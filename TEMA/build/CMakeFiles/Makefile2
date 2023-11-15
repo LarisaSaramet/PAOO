@@ -54,139 +54,79 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xjuji10x/Desktop/TEMA/src
+CMAKE_SOURCE_DIR = /home/xjuji10x/Desktop/PAOO/TEMA/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xjuji10x/Desktop/TEMA/build
+CMAKE_BINARY_DIR = /home/xjuji10x/Desktop/PAOO/TEMA/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
-all: meniu/all
-all: mancare/all
+all: CMakeFiles/restaurant_src.dir/all
+all: CMakeFiles/restaurant.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: meniu/preinstall
-preinstall: mancare/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
-clean: meniu/clean
-clean: mancare/clean
+clean: CMakeFiles/restaurant_src.dir/clean
+clean: CMakeFiles/restaurant.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory mancare
-
-# Recursive "all" directory target.
-mancare/all: mancare/CMakeFiles/MancareLib.dir/all
-.PHONY : mancare/all
-
-# Recursive "preinstall" directory target.
-mancare/preinstall:
-.PHONY : mancare/preinstall
-
-# Recursive "clean" directory target.
-mancare/clean: mancare/CMakeFiles/MancareLib.dir/clean
-.PHONY : mancare/clean
-
-#=============================================================================
-# Directory level rules for directory meniu
-
-# Recursive "all" directory target.
-meniu/all: meniu/CMakeFiles/MeniuLib.dir/all
-.PHONY : meniu/all
-
-# Recursive "preinstall" directory target.
-meniu/preinstall:
-.PHONY : meniu/preinstall
-
-# Recursive "clean" directory target.
-meniu/clean: meniu/CMakeFiles/MeniuLib.dir/clean
-.PHONY : meniu/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/restaurant_src.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: meniu/CMakeFiles/MeniuLib.dir/all
-CMakeFiles/main.dir/all: mancare/CMakeFiles/MancareLib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/TEMA/build/CMakeFiles --progress-num=5,6 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/restaurant_src.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target restaurant_src"
+.PHONY : CMakeFiles/restaurant_src.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+CMakeFiles/restaurant_src.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/restaurant_src.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles 0
+.PHONY : CMakeFiles/restaurant_src.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+restaurant_src: CMakeFiles/restaurant_src.dir/rule
+.PHONY : restaurant_src
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/restaurant_src.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/clean
+.PHONY : CMakeFiles/restaurant_src.dir/clean
 
 #=============================================================================
-# Target rules for target meniu/CMakeFiles/MeniuLib.dir
+# Target rules for target CMakeFiles/restaurant.dir
 
 # All Build rule for target.
-meniu/CMakeFiles/MeniuLib.dir/all: mancare/CMakeFiles/MancareLib.dir/all
-	$(MAKE) $(MAKESILENT) -f meniu/CMakeFiles/MeniuLib.dir/build.make meniu/CMakeFiles/MeniuLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f meniu/CMakeFiles/MeniuLib.dir/build.make meniu/CMakeFiles/MeniuLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/TEMA/build/CMakeFiles --progress-num=3,4 "Built target MeniuLib"
-.PHONY : meniu/CMakeFiles/MeniuLib.dir/all
+CMakeFiles/restaurant.dir/all: CMakeFiles/restaurant_src.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles --progress-num=1,2 "Built target restaurant"
+.PHONY : CMakeFiles/restaurant.dir/all
 
 # Build rule for subdir invocation for target.
-meniu/CMakeFiles/MeniuLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 meniu/CMakeFiles/MeniuLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 0
-.PHONY : meniu/CMakeFiles/MeniuLib.dir/rule
+CMakeFiles/restaurant.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/restaurant.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles 0
+.PHONY : CMakeFiles/restaurant.dir/rule
 
 # Convenience name for target.
-MeniuLib: meniu/CMakeFiles/MeniuLib.dir/rule
-.PHONY : MeniuLib
+restaurant: CMakeFiles/restaurant.dir/rule
+.PHONY : restaurant
 
 # clean rule for target.
-meniu/CMakeFiles/MeniuLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f meniu/CMakeFiles/MeniuLib.dir/build.make meniu/CMakeFiles/MeniuLib.dir/clean
-.PHONY : meniu/CMakeFiles/MeniuLib.dir/clean
-
-#=============================================================================
-# Target rules for target mancare/CMakeFiles/MancareLib.dir
-
-# All Build rule for target.
-mancare/CMakeFiles/MancareLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f mancare/CMakeFiles/MancareLib.dir/build.make mancare/CMakeFiles/MancareLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f mancare/CMakeFiles/MancareLib.dir/build.make mancare/CMakeFiles/MancareLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xjuji10x/Desktop/TEMA/build/CMakeFiles --progress-num=1,2 "Built target MancareLib"
-.PHONY : mancare/CMakeFiles/MancareLib.dir/all
-
-# Build rule for subdir invocation for target.
-mancare/CMakeFiles/MancareLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mancare/CMakeFiles/MancareLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 0
-.PHONY : mancare/CMakeFiles/MancareLib.dir/rule
-
-# Convenience name for target.
-MancareLib: mancare/CMakeFiles/MancareLib.dir/rule
-.PHONY : MancareLib
-
-# clean rule for target.
-mancare/CMakeFiles/MancareLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mancare/CMakeFiles/MancareLib.dir/build.make mancare/CMakeFiles/MancareLib.dir/clean
-.PHONY : mancare/CMakeFiles/MancareLib.dir/clean
+CMakeFiles/restaurant.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/clean
+.PHONY : CMakeFiles/restaurant.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

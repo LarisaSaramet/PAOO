@@ -1,17 +1,18 @@
-#include "meniu.hpp" 
+#include "../includes/meniu.hpp" 
 #include <iostream>
 #include <cstring>
 
     
 using namespace std;
-namespace Restaurant {
+namespace meniu{
 
-    Meniu::Meniu(const char* tipMeniu, float pret){
+    Meniu::Meniu(const char* tipMeniu, float pret, int nrPortii){
         std::cout << "Meniu constructor cu param" << std::endl;
         this->tipMeniu = new char[strlen(tipMeniu) +1];
         strcpy(this->tipMeniu, tipMeniu);
 
         this->pret = pret;
+        this->nrPortii = nrPortii;
     }
 
     Meniu::Meniu(){
@@ -29,7 +30,8 @@ namespace Restaurant {
         strcpy(this->tipMeniu, x.tipMeniu);
 
         this->pret = x.pret;
-    //   
+        this->nrPortii = x.nrPortii;
+     
     }
 
     Meniu& Meniu::operator=(const Meniu& x) {
@@ -37,12 +39,13 @@ namespace Restaurant {
         
         if (this != &x) { 
 
-            delete[] tipMeniu;
+            //delete[] tipMeniu;
             
             this->tipMeniu = new char[strlen(x.tipMeniu) +1];
             strcpy(this->tipMeniu, x.tipMeniu);
 
             this->pret = x.pret;
+            this->nrPortii = x.nrPortii;
             
         }
         
@@ -59,10 +62,12 @@ namespace Restaurant {
         x.pret = 0;
     }
 
-
+    
     void Meniu::detaliiMeniu(){
+        cout <<"Clasa abstracta apelata.\n";
         std::cout<<"Tip meniu: " <<  tipMeniu <<  std::endl;
         std::cout<<"Pret: " <<  pret <<  std::endl;
+        std::cout<<"Nr portii: "<< nrPortii << std::endl;
 
     }
 
@@ -77,13 +82,22 @@ namespace Restaurant {
         pret = newPret;
     }
 
-    //gettere
-    const char* Meniu::getTipMeniu(){
-        return tipMeniu;
+    void Meniu::setNumarPortii(int newnumarPortii){
+        nrPortii = newnumarPortii;
     }
+
+    //gettere
+     const char* Meniu::getTipMeniu(){
+        return tipMeniu;
+     }
 
     float Meniu::getPret(){
         return pret;
     }
+
+    const int Meniu::getNumarPortii(){
+        return nrPortii;
+    }
+    
 
 }

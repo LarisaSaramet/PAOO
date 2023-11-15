@@ -1,11 +1,25 @@
-add_subdirectory(meniu)
-add_subdirectory(mancare)
+cmake_minimum_required(VERSION 3.2)
 
-# Define the executable
-add_executable(main main.cpp)   
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+project(restaurant)
 
-target_link_libraries(main PRIVATE MancareLib MeniuLib)
+add_library(restaurant_src
+		meniu/meniu.cpp
+		bautura/bautura.cpp
+		adresa/adresa.cpp
+		livrare/livrare.cpp)
 
-target_include_directories(main PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/mancare")
-target_include_directories(main PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/meniu")
+add_executable(restaurant main.cpp)
+
+target_link_libraries(restaurant
+	PRIVATE
+		restaurant_src
+)
+
+target_include_directories(restaurant
+	PUBLIC
+		${CMAKE_CURRENT_SOURCE_DIR}
+)
+target_include_directories(restaurant_src
+	PUBLIC
+		${CMAKE_CURRENT_SOURCE_DIR}
+	)

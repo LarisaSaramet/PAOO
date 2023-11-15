@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xjuji10x/Desktop/TEMA/src
+CMAKE_SOURCE_DIR = /home/xjuji10x/Desktop/PAOO/TEMA/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xjuji10x/Desktop/TEMA/build
+CMAKE_BINARY_DIR = /home/xjuji10x/Desktop/PAOO/TEMA/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles /home/xjuji10x/Desktop/TEMA/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles /home/xjuji10x/Desktop/PAOO/TEMA/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/TEMA/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xjuji10x/Desktop/PAOO/TEMA/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,58 +117,150 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named restaurant_src
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+restaurant_src: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 restaurant_src
+.PHONY : restaurant_src
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+restaurant_src/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/build
+.PHONY : restaurant_src/fast
 
 #=============================================================================
-# Target rules for targets named MeniuLib
+# Target rules for targets named restaurant
 
 # Build rule for target.
-MeniuLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MeniuLib
-.PHONY : MeniuLib
+restaurant: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 restaurant
+.PHONY : restaurant
 
 # fast build rule for target.
-MeniuLib/fast:
-	$(MAKE) $(MAKESILENT) -f meniu/CMakeFiles/MeniuLib.dir/build.make meniu/CMakeFiles/MeniuLib.dir/build
-.PHONY : MeniuLib/fast
+restaurant/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/build
+.PHONY : restaurant/fast
 
-#=============================================================================
-# Target rules for targets named MancareLib
-
-# Build rule for target.
-MancareLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MancareLib
-.PHONY : MancareLib
-
-# fast build rule for target.
-MancareLib/fast:
-	$(MAKE) $(MAKESILENT) -f mancare/CMakeFiles/MancareLib.dir/build.make mancare/CMakeFiles/MancareLib.dir/build
-.PHONY : MancareLib/fast
+adresa/adresa.o: adresa/adresa.cpp.o
+.PHONY : adresa/adresa.o
 
 # target to build an object file
-main.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.o
-.PHONY : main.o
+adresa/adresa.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/adresa/adresa.cpp.o
+.PHONY : adresa/adresa.cpp.o
+
+adresa/adresa.i: adresa/adresa.cpp.i
+.PHONY : adresa/adresa.i
 
 # target to preprocess a source file
-main.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.i
-.PHONY : main.i
+adresa/adresa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/adresa/adresa.cpp.i
+.PHONY : adresa/adresa.cpp.i
+
+adresa/adresa.s: adresa/adresa.cpp.s
+.PHONY : adresa/adresa.s
 
 # target to generate assembly for a file
-main.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.s
+adresa/adresa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/adresa/adresa.cpp.s
+.PHONY : adresa/adresa.cpp.s
+
+bautura/bautura.o: bautura/bautura.cpp.o
+.PHONY : bautura/bautura.o
+
+# target to build an object file
+bautura/bautura.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/bautura/bautura.cpp.o
+.PHONY : bautura/bautura.cpp.o
+
+bautura/bautura.i: bautura/bautura.cpp.i
+.PHONY : bautura/bautura.i
+
+# target to preprocess a source file
+bautura/bautura.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/bautura/bautura.cpp.i
+.PHONY : bautura/bautura.cpp.i
+
+bautura/bautura.s: bautura/bautura.cpp.s
+.PHONY : bautura/bautura.s
+
+# target to generate assembly for a file
+bautura/bautura.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/bautura/bautura.cpp.s
+.PHONY : bautura/bautura.cpp.s
+
+livrare/livrare.o: livrare/livrare.cpp.o
+.PHONY : livrare/livrare.o
+
+# target to build an object file
+livrare/livrare.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/livrare/livrare.cpp.o
+.PHONY : livrare/livrare.cpp.o
+
+livrare/livrare.i: livrare/livrare.cpp.i
+.PHONY : livrare/livrare.i
+
+# target to preprocess a source file
+livrare/livrare.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/livrare/livrare.cpp.i
+.PHONY : livrare/livrare.cpp.i
+
+livrare/livrare.s: livrare/livrare.cpp.s
+.PHONY : livrare/livrare.s
+
+# target to generate assembly for a file
+livrare/livrare.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/livrare/livrare.cpp.s
+.PHONY : livrare/livrare.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
 .PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant.dir/build.make CMakeFiles/restaurant.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+meniu/meniu.o: meniu/meniu.cpp.o
+.PHONY : meniu/meniu.o
+
+# target to build an object file
+meniu/meniu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/meniu/meniu.cpp.o
+.PHONY : meniu/meniu.cpp.o
+
+meniu/meniu.i: meniu/meniu.cpp.i
+.PHONY : meniu/meniu.i
+
+# target to preprocess a source file
+meniu/meniu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/meniu/meniu.cpp.i
+.PHONY : meniu/meniu.cpp.i
+
+meniu/meniu.s: meniu/meniu.cpp.s
+.PHONY : meniu/meniu.s
+
+# target to generate assembly for a file
+meniu/meniu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/restaurant_src.dir/build.make CMakeFiles/restaurant_src.dir/meniu/meniu.cpp.s
+.PHONY : meniu/meniu.cpp.s
 
 # Help Target
 help:
@@ -178,12 +270,23 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MancareLib"
-	@echo "... MeniuLib"
-	@echo "... main"
+	@echo "... restaurant"
+	@echo "... restaurant_src"
+	@echo "... adresa/adresa.o"
+	@echo "... adresa/adresa.i"
+	@echo "... adresa/adresa.s"
+	@echo "... bautura/bautura.o"
+	@echo "... bautura/bautura.i"
+	@echo "... bautura/bautura.s"
+	@echo "... livrare/livrare.o"
+	@echo "... livrare/livrare.i"
+	@echo "... livrare/livrare.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... meniu/meniu.o"
+	@echo "... meniu/meniu.i"
+	@echo "... meniu/meniu.s"
 .PHONY : help
 
 

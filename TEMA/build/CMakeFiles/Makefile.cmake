@@ -10,9 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "/home/xjuji10x/Desktop/TEMA/src/CMakeLists.txt"
-  "/home/xjuji10x/Desktop/TEMA/src/mancare/CMakeLists.txt"
-  "/home/xjuji10x/Desktop/TEMA/src/meniu/CMakeLists.txt"
+  "/home/xjuji10x/Desktop/PAOO/TEMA/src/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -41,13 +39,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "meniu/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "mancare/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main.dir/DependInfo.cmake"
-  "meniu/CMakeFiles/MeniuLib.dir/DependInfo.cmake"
-  "mancare/CMakeFiles/MancareLib.dir/DependInfo.cmake"
+  "CMakeFiles/restaurant_src.dir/DependInfo.cmake"
+  "CMakeFiles/restaurant.dir/DependInfo.cmake"
   )
